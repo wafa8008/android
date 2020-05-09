@@ -1,46 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="@drawable/wafa55"
-    >
-
+    tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/playbtn"
-        android:layout_width="150dp"
-        android:layout_height="63dp"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-
-        android:layout_marginTop="312dp"
-        android:layout_marginEnd="116dp"
-        android:layout_marginBottom="353dp"
-        android:background="@drawable/design"
-        android:text="play"
-        app:layout_constraintBottom_toTopOf="@+id/stopbtn"
+        android:id="@+id/btn1"
+        android:layout_width="357dp"
+        android:layout_height="106dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginBottom="155dp"
+        android:onClick="callfirst"
+        android:text="move to calculator"
+        app:layout_constraintBottom_toTopOf="@+id/btn2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/stopbtn"
-        android:layout_width="153dp"
-        android:layout_height="58dp"
-
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginEnd="113dp"
-        android:layout_marginBottom="209dp"
-        android:background="@drawable/design"
-        android:text="stop"
+        android:id="@+id/btn2"
+        android:layout_width="362dp"
+        android:layout_height="123dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="259dp"
+        android:onClick="callsecond"
+        android:text="move to BMI"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
-        app:layout_constraintStart_toStartOf="parent" />
-</RelativeLayout>
+        app:layout_constraintHorizontal_bias="0.471"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn1" />
+</androidx.constraintlayout.widget.ConstraintLayout>
